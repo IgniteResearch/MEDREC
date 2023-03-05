@@ -1,0 +1,19 @@
+name: delete-workflow-runs
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2.0.3
+        with:
+          # The token used to authenticate.
+          token: ${{ secrets.SAML_GITHUB_TOKEN }}
+          # The name of the repository.
+          repository: ${{ github.repository }}
+          # The number of days.
+          retain_days: 0
+          # The minimum runs to keep for each workflow.
+          keep_minimum_runs: 0
