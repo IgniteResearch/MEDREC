@@ -32,12 +32,13 @@ jobs:
   deploy-to-dev:
     runs-on: ubuntu-latest
     steps:
-      - name: Dev Deployment initiating repository event
-        run: |
-          curl -X POST https://api.github.com/repos/IgniteResearch/dev/dispatches \
-          -H 'Accept: application/vnd.github.everest-preview+json' \
-          -u ${{ secrets.SAML_GITHUB_TOKEN }} \
-          --data '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.SAML_GITHUB_TOKEN }}
+          repository: IgniteResearch/dev
+          event-type: MedRec
+          client-payload: '{ "repository": "IgniteResearch/MedRec" }'
   # deploy-to-prod:
   #   needs: deploy-to-dev
   #   environment:
