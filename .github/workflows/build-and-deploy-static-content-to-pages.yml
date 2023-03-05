@@ -34,33 +34,33 @@ jobs:
     steps:
       - name: Dev Deployment initiating repository event
         run: |
-          curl -X POST https://api.github.com/repos/IgniteResearch/dev-ir-web-app/dispatches \
+          curl -X POST https://api.github.com/repos/IgniteResearch/dev/dispatches \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.SAML_GITHUB_TOKEN }} \
           --data '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
-  deploy-to-prod:
-    needs: deploy-to-dev
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-          cache: "npm"
-      - name: Build & Generate Static Site for prod
-        run: |
-          npm install 
-          npm run build
-          echo 'igniteresearch.in' > build/CNAME
-      - name: Setup Pages
-        uses: actions/configure-pages@v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "build"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@main
+  # deploy-to-prod:
+  #   needs: deploy-to-dev
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v2
+  #       with:
+  #         node-version: "16"
+  #         cache: "npm"
+  #     - name: Build & Generate Static Site for prod
+  #       run: |
+  #         npm install 
+  #         npm run build
+  #         echo 'igniteresearch.in' > build/CNAME
+  #     - name: Setup Pages
+  #       uses: actions/configure-pages@v1
+  #     - name: Upload artifact
+  #       uses: actions/upload-pages-artifact@v1
+  #       with:
+  #         path: "build"
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@main
