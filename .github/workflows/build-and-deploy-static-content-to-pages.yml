@@ -38,7 +38,7 @@ jobs:
           token: ${{ secrets.SAML_GITHUB_TOKEN }}
           repository: IgniteResearch/dev
           event-type: MedRec
-          client-payload: '{ "repository": "IgniteResearch/MedRec" }'
+          client-payload: '{ "repository": "IgniteResearch/MedRec", "repoName": "medrec" }'
   # deploy-to-prod:
   #   needs: deploy-to-dev
   #   environment:
