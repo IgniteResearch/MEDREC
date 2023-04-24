@@ -106,14 +106,14 @@ const config = {
                   
                     <div>
                       <img src="/img/logo.png" alt="Image description" style="vertical-align: middle; width: 30px; height: 30px;">
-                      <span style="display: inline-block; vertical-align: middle; font-weight: bold; font-size: 1rem;">MedRec</span>
-                      <figcaption style="vertical-align: middle; margin-left:35px; font-size: 0.6rem; margin-top:-10px">A Secure Medical Record Bank</figcaption>
+                      <span style="display: inline-block; vertical-align: middle; font-weight: bold; font-size: 1.2rem;">MedRec</span>
+                      <figcaption style="vertical-align: middle; margin-left:30px; font-size: 0.8rem; margin-top:-10px">A Secure Medical Record Bank</figcaption>
                     </div>
                   `,
               },
               {
                 html: `
-                      <span style="display: inline-block; margin-top: 10px; vertical-align: middle; font-size: 0.6rem;">Health here! - Keep your health records with you at all times - not just you,<br> your entire family's, without cost.
+                      <span style="display: inline-block; margin-top: 10px; vertical-align: middle; font-size: 0.7rem;">Health here! - Keep your health records with you at all times - not just you,<br> your entire family's, without cost.
                       </span>
                   `,
               },
