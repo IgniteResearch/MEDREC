@@ -52,6 +52,11 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -104,16 +109,16 @@ const config = {
               {
                 html: `
                   
-                    <div>
-                      <img src="/img/logo.png" alt="Image description" style="vertical-align: middle; width: 30px; height: 30px;">
-                      <span style="display: inline-block; vertical-align: middle; font-weight: bold; font-size: 1.2rem;">MedRec</span>
-                      <figcaption style="vertical-align: middle; margin-left:30px; font-size: 0.8rem; margin-top:-10px">A Secure Medical Record Bank</figcaption>
-                    </div>
+                    <a href="/" style="color: white; text-decoration: none;">
+                      <img src="/img/logo.png" alt="Image description" style="vertical-align: middle; width: 50px; height: 50px;">
+                      <span style="display: inline-block; vertical-align: middle; font-weight: bold; font-size: 2rem;">MedRec</span>
+                      <figcaption style="vertical-align: middle; margin-left:54px; font-size: 0.7rem; margin-top:-12px">A Secure Medical Record Bank</figcaption>
+                    </a>
                   `,
               },
               {
                 html: `
-                      <span style="display: inline-block; margin-top: 10px; vertical-align: middle; font-size: 0.7rem;">Health here! - Keep your health records with you at all times - not just you,<br> your entire family's, without cost.
+                      <span style="display: inline-block; margin-top: 10px; vertical-align: middle; font-size: 0.75rem;">Keep your health records with you at all times <b><a style="color: white; " href="/" >@No-cost</a></b>.
                       </span>
                   `,
               },
@@ -129,38 +134,81 @@ const config = {
               },
             ],
           },
+          
           {
-            title: "Community",
+            title: "USEFUL LINKS",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "/",
+                label: "Home",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "/#about",
+                label: "About",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "/#services",
+                label: "Services",
               },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              { to: "/blog", label: "Blog", position: "right" },
               {
                 label: "GitHub",
                 href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
+  
+          {
+            title: "Our Services",
+            items: [
+              {
+                label: "Digital Health Record",
+                href: "/digital-health-record",
+              },
+              {
+                label: "Clinic Management System",
+                href: "/clinic-management-system",
+              },
+            ],
+          },
+          {
+            title: "Community & Support",
+            items: [
+              {
+                label: "Discord",
+                href: "https://discord.gg/UQcNNurJkq",
+              },
+              {
+                label: "GitHub",
+                href: "https://githu.com/igniteresearch/medrec",
+              },
+            ],
+          },
+          {
+            title: "Contact Us",
+            items: [
+              {
+                html: `
+                      <span style="display: inline-block; margin-top: 20px; margin-bottom: 60px; vertical-align: middle; font-size: 0.8rem;">
+                      27-2-769, 2nd floor,  A C Nagar,<br> 
+                      Near 6th town police station, <br> 
+                      Nellore, Andhra Pradesh, <br>
+                      India - 524002. 
+                      </span>
+                  `,
+              },
+              {
+                html: `
+                <div>
+                <span>Phone: +91 6301436533</span><br>
+                <span>Email:support@igniteresearch.in</span>
+                </div>
+                  `,
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <b>MedRec</b>. All Rights Reserved, <br> <p style="font-size: 0.6rem;">maintained by <b><a href="" style="text-decoration: none; font-size: 0.8rem;">MedRec</a></b>, Designed by <b><a href=""  style="text-decoration: none;font-size: 0.8rem;">Ignite Research</a></b>, Built with Docusaurus.</p>`,
+        copyright: `Copyright © ${new Date().getFullYear()} <b>MedRec</b>. All Rights Reserved, <br> <p style="font-size: 0.6rem;">maintained by <b><a href="" style="color: white; text-decoration: none; font-size: 0.8rem;">MedRec</a></b>, Designed by <b><a href=""  style="color: white; text-decoration: none;font-size: 0.8rem;">Ignite Research</a></b>, Built with Docusaurus.</p>`,
       },
     }),
 };
