@@ -1,0 +1,86 @@
+
+.heading-content {
+    margin-bottom: 90px;
+}
+
+.heading-content > div:first-child {
+    padding-top: 175px;
+}
+
+.discover-more {
+    font-size: 1.3rem;
+    margin-top: 160px;
+    text-decoration: none;
+}
+
+.discover-more:hover {
+    color: #1b1e43;
+    text-decoration: none;
+}
+
+.discover-more i {
+    color: #3acef8;
+}
+
+/* Content common */
+.content-row {
+    margin-bottom: 90px;
+}
+
+.phone-img-wrap {
+    text-align: center;
+}
+
+.figure-img {
+    margin-bottom: 20px;
+    width: 90px;
+}
+
+.content-row > div:first-child {
+    padding-top: 80px;
+}
+
+.green-text + img + .content-row > div:nth-child(2) {
+    margin-top: -38px;
+}
+
+.green-text + img + .content-row > div:first-child {
+    padding-top: 43px;
+}
+
+/* Features */
+.features {
+    width: 100%;
+    margin-bottom: 90px;
+    min-height: 890px;
+    background: url("images/features-clinic.jpg") no-repeat left center;
+    background-size: 33.59% auto;
+}
+
+.features .row {
+    margin-bottom: 10px;
+}
+
+.features .feature img {
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+.features .feature h3 {
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+}
+
+/* Track all your patients */
+.content-side-image {
+    width: 100%;
+    margin-bottom: 90px;
+    min-height: 745px;
+    background: url("images/medrec-dashboard.jpg") no-repeat right center;
+    background-size: 48.52% auto;
+}
+
+.content-side-image .row > div > img {
+    margin-bottom: 30px;
+    width: 90px;
+}
