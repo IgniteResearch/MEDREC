@@ -4,15 +4,11 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/Services";
-import Box from "@mui/material/Box";
 import styles from "./index.module.css";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
 import ProductHero from "../components/ProductHero";
-import Stats from "../components/stats";
 import AboutUs from "../components/AboutUs";
-import Features from '../components/Features/Features';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -51,7 +47,6 @@ export default function Home() {
     >
       <ProductHero />
       <main>
-        <Features/>
         <HomepageFeatures />
         <AboutUs />
       </main>

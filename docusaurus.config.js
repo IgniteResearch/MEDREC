@@ -127,8 +127,8 @@ const config = {
                 <div>
                 <a href="#"><img src="/img/twitter.png" style="margin-right: 10px; width: 23px; height: 23px;" /></a>
                 <a href="#"><img src="/img/facebook.png" style=" margin-right: 10px; width: 21px; height: 21px;" /></a>
-                <a href="#"><img src="/img/linkedin.png" style="margin-top: 20px; margin-right: 10px; width: 20px; height: 20px;" /></a>
-                <a href="#"><img src="/img/instagram.png" style="margin-top: 20px; margin-right: 10px; width: 20px; height: 20px;" /></a>
+                <a href="#"><img src="/img/linkedin.png" style="margin-top: 4px; margin-right: 10px; width: 20px; height: 20px;" /></a>
+                <a href="#"><img src="/img/instagram.png" style="margin-top: 5px; margin-right: 10px; width: 20px; height: 20px;" /></a>
                 </div>
                   `,
               },

@@ -7,7 +7,7 @@ import style from "../../pages/index.module.css";
 const FeatureList = [
   {
     title: "Medical Record",
-    Svg: "/img/services/medical_record.png",
+    Svg: "img/features/clinic-detailed-medical-history.svg",
     description: (
       <>
         Our medical record feature is designed to securely store and quickly
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: "Treatment History",
-    Svg: "/img/services/treatment_history.png",
+    Svg: "img/features/clinic-patient-list.svg",
     description: (
       <>
         Keep track of your medical history with our treatment tracker, so you
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: "Stats & Treatments",
-    Svg: "/img/services/stats.png",
+    Svg: "/img/features/clinic-customizable-settings.svg",
     description: (
       <>
         Monitor your health progress with our stats tracker and get personalized
@@ -37,7 +37,7 @@ const FeatureList = [
   },
   {
     title: "Personal Health Record",
-    Svg: "/img/services/personal_health_record.png",
+    Svg: "/img/features/clinic-bookings-and-payments.svg",
     description: (
       <>
         Access your complete health history in one secure location with our
@@ -48,7 +48,7 @@ const FeatureList = [
   },
   {
     title: "Remote Access",
-    Svg: "/img/services/remote_access.png",
+    Svg: "/img/features/clinic-video-and-voice-calls.svg",
     description: (
       <>
         Stay connected to your healthcare providers from anywhere with our
@@ -59,7 +59,7 @@ const FeatureList = [
   },
   {
     title: "Appointments & Reminders",
-    Svg: "/img/services/appointment.png",
+    Svg: "img/features/clinic-appointments-calendar.svg",
     description: (
       <>
         Never miss an appointment or medication dose again with our appointments
