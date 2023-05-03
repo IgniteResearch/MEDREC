@@ -231,6 +231,10 @@ h6 {
   position: -webkit-sticky;
 }
 
+.navbar__title {
+  font-size: large;
+}
+
 
 /* 
 .navbar {

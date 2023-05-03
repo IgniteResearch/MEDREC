@@ -1,3 +1,4 @@
+const { Html } = require('@mui/icons-material');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -32,13 +33,14 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // docs: {
+        //   sidebarPath: require.resolve("./sidebars.js"),
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        // },
+        docs: false,
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -68,25 +70,25 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        
-        title: "My Site",
+        title: "MedRec",
         logo: {
-          alt: "My Site Logo",
+          alt: "MedRec logo",
           src: "img/logo.png",
+
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "right",
-            label: "Tutorial",
-          },
+          { to: "/", label: "Home", position: "right" },
+          { to: "/#about", label: "About Us", position: "right" },
+          { to: "/#features", label: "Features", position: "right" },
+          { to: "/#testimonials", label: "Testimonials", position: "right" },
+          { to: "/#pricing", label: "Pricing", position: "right" },
           { to: "/blog", label: "Blog", position: "right" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
+          { to: "/#contact", label: "Contact Us", position: "right" },
+          // {
+          //   type: 'html',
+          //   position: 'right',
+          //   value: <button  style='font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 16px;letter-spacing: 1px; display: inline-block; padding: 10px 30px; border-radius: 50px;transition: 0.5s; color: #fff; background: #1acc8d;'>Button</button>
+          // }
         ],
       },
       colorMode: {
