@@ -14,7 +14,7 @@ export default function Hero() {
         <h2>We are team of talented designers making websites with Bootstrap</h2>
         <div class="text-center text-lg-start">
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        </div>
+        </div>  
       </div>
     </div>
     <div class="col-lg-4 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">

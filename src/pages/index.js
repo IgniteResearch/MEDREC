@@ -11,6 +11,8 @@ import Features from "../components/Features";
 import Testimonials from '../components/Testimonial';
 import Pricing from '../components/Pricing';
 import FAQs from '../components/FAQs';
+import Details from '../components/Details';
+import ContactUs from '../components/Contact';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -44,9 +46,11 @@ export default function Home() {
           <Hero />
           <About />
           <Features />
+          <Details/>
           <Testimonials/>
           <Pricing/>
           <FAQs/>
+          <ContactUs/>
         </main>
       </Layout>
 
